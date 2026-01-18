@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  min-height: 100%;
+}
+
+:root {
+  color-scheme: light;
+  background: linear-gradient(90deg, #9654dc 0%, #6256d7 50%, #3c62e3 100%);
+}
+
+body {
+  @apply bg-transparent text-ink-900 antialiased;
+}
+
+.section {
+  @apply py-16 md:py-20;
+}
+
+.container-base {
+  @apply mx-auto w-full max-w-6xl px-6;
+}
+
+.hero-wrap {
+  @apply mx-auto flex w-full max-w-3xl flex-col items-center gap-6 text-center;
+}
